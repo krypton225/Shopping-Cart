@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is just a shopping cart project">
+    <meta name="keywords" content="HTML, HTML5, CSS, CSS3, JavaScript">
     <meta name="author" content="Khaled Mohamed Mahmoud">
 
     <title>Shopping Cart | Register Page</title>
@@ -16,9 +18,52 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/my-fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- * There are all custom files for the current page -->
+    <link rel="stylesheet" href="css/landing.css">
 </head>
 
 <body>
+
+    <!-- * Landing page -->
+    <header class="landing" id="landing">
+        <nav class="landing__navbar">
+            <h1 class="landing__navbar__brand">
+                <a href="#" class="landing__navbar__brand__link">shopping cart</a>
+            </h1> <!-- ./landing__navbar__brand -->
+
+            <ul class="landing__navbar__list">
+                <li class="landing__navbar__list__item">
+                    <a href="login.html" class="landing__navbar__list__item__link">sign in</a>
+                </li> <!-- ./landing__navbar__list__item -->
+                <li class="landing__navbar__list__item">
+                    <a href="#" class="landing__navbar__list__item__link">sign up</a>
+                </li> <!-- ./landing__navbar__list__item -->
+            </ul> <!-- ./landing__navbar__list -->
+
+            <div class="toggle-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> <!-- ./toggle-menu -->
+        </nav> <!-- ./landing__navbar -->
+
+        <div class="landing__section">
+            <form class="landing__section__form" id="myForm" autocomplete="off">
+                <h3 class="landing__section__form__title">register</h3>
+
+                <div class="landing__section__form__inputs">
+                    <input type="email" name="registerEmail" id="registerEmail" placeholder="enter email">
+                    <input type="text" name="registerUserName" id="registerUserName" placeholder="enter username">
+                    <input type="password" name="registerPassword" id="registerPassword" placeholder="enter password">
+                    <input type="submit" name="registerSubmit" id="registerSubmit">
+                </div> <!-- ./landing__section__form__inputs -->
+            </form> <!-- ./landing__section__form -->
+        </div> <!-- ./landing__section -->
+    </header> <!-- ./landing -->
+
+    <script src="js/reg-log.js"></script>
 
 </body>
 
