@@ -17,10 +17,19 @@ checkerModal.addEventListener("click", () => {
 registerSubmit.addEventListener("click", (e) => {
   e.preventDefault();
 
+  // * Validate the email pattern
+  var regexEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+
+  // * Validate the username pattern
+  var usernameRegex = /^[a-zA-Z0-9]+$/;
+
   if (
     registerEmail.value === "" ||
     registerUserName.value === "" ||
-    registerPassword.value === ""
+    registerPassword.value === "" ||
+    // * This is for the validation of the pattern of the email input
+    !regexEmail.test(registerEmail.value) ||
+    !usernameRegex.test(registerUserName.value)
   ) {
     checkerModal.textContent = "Please, Enter all inputs!";
     checkerModal.classList.add("show-checker");
