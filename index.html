@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="css/my-fonts.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <!-- * There are all custom files for the current page -->
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/item.css">
+
     <!-- * html5shiv script file -->
     <!--[if lt IE 9]>
 	    <script src="js/html5shiv.js"></script>
@@ -26,6 +30,109 @@
 
 <body>
 
+    <!-- * Landing page -->
+    <header class="landing" id="landing">
+        <nav class="landing__navbar">
+            <h1 class="landing__navbar__brand">
+                <a href="#" class="landing__navbar__brand__link">shopping cart</a>
+            </h1> <!-- ./landing__navbar__brand -->
+
+            <ul class="landing__navbar__list" id="signsButtons">
+                <li class="landing__navbar__list__item">
+                    <a href="#" class="landing__navbar__list__item__link">sign in</a>
+                </li> <!-- ./landing__navbar__list__item -->
+                <li class="landing__navbar__list__item">
+                    <a href="register.html" class="landing__navbar__list__item__link">sign up</a>
+                </li> <!-- ./landing__navbar__list__item -->
+            </ul> <!-- ./landing__navbar__list -->
+
+            <ul class="landing__navbar__list" id="itemsAfterLocal">
+                <li class="landing__navbar__list__item">
+                    <a href="#" class="landing__navbar__list__item__link-name"></a>
+                </li> <!-- ./landing__navbar__list__item -->
+                <li class="landing__navbar__list__item">
+                    <a href="#" class="landing__navbar__list__item__link">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a> <!-- ./landing__navbar__list__item__link -->
+                </li> <!-- ./landing__navbar__list__item -->
+                <li class="landing__navbar__list__item">
+                    <a href="#" class="landing__navbar__list__item__link" id="logout">logout</a>
+                </li> <!-- ./landing__navbar__list__item -->
+            </ul> <!-- ./landing__navbar__list -->
+
+            <div class="toggle-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> <!-- ./toggle-menu -->
+        </nav> <!-- ./landing__navbar -->
+    </header> <!-- ./landing -->
+
+    <section class="items" id="items">
+        <div class="container">
+            <div class="items__content">
+                <div class="items__content__card">
+                    <div class="items__content__card__img">
+                        <img src="imgs/products/pexels-tyler-lastovich-699122.jpg"
+                            alt="This is just a laptop photo and its type is dell" draggable="false">
+                    </div> <!-- ./items__content__card__img -->
+
+                    <div class="items__content__card__info">
+                        <p class="items__content__card__info__desc">
+                            Lorem ipsum dolor sit amet adipisicing.
+                        </p> <!-- ./items__content__card__info__desc -->
+                        <p class="items__content__card__info__type">Type: large</p>
+                    </div> <!-- ./items__content__card__info -->
+
+                    <div class="items__content__card__operations">
+                        <button id="addToCart">add to cart</button>
+                        <i class="fav fas fa-heart fa-beat" style="--fa-animation-duration: 1s;"></i>
+                    </div> <!-- ./items__content__card__operations -->
+                </div> <!-- ./items__content__card -->
+
+                <div class="items__content__card">
+                    <div class="items__content__card__img">
+                        <img src="imgs/products/screen.jpg" alt="This is just a laptop photo and its type is dell"
+                            draggable="false">
+                    </div> <!-- ./items__content__card__img -->
+
+                    <div class="items__content__card__info">
+                        <p class="items__content__card__info__desc">
+                            Lorem ipsum dolor sit amet adipisicing.
+                        </p> <!-- ./items__content__card__info__desc -->
+                        <p class="items__content__card__info__type">Type: large</p>
+                    </div> <!-- ./items__content__card__info -->
+
+                    <div class="items__content__card__operations">
+                        <button id="addToCart">add to cart</button>
+                        <i class="fav fas fa-heart fa-beat" style="--fa-animation-duration: 1s;"></i>
+                    </div> <!-- ./items__content__card__operations -->
+                </div> <!-- ./items__content__card -->
+
+                <div class="items__content__card">
+                    <div class="items__content__card__img">
+                        <img src="imgs/products/pexels-karsten-madsen-18105.jpg"
+                            alt="This is just a laptop photo and its type is dell" draggable="false">
+                    </div> <!-- ./items__content__card__img -->
+
+                    <div class="items__content__card__info">
+                        <p class="items__content__card__info__desc">
+                            Lorem ipsum dolor sit amet adipisicing.
+                        </p> <!-- ./items__content__card__info__desc -->
+                        <p class="items__content__card__info__type">Type: large</p>
+                    </div> <!-- ./items__content__card__info -->
+
+                    <div class="items__content__card__operations fa-3x">
+                        <button id="addToCart">add to cart</button>
+                        <i class="fav fas fa-heart"></i>
+                    </div> <!-- ./items__content__card__operations -->
+                </div> <!-- ./items__content__card -->
+            </div> <!-- ./items__content -->
+        </div> <!-- ./container -->
+    </section> <!-- ./items -->
+
+    <script src="js/reg-log.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
