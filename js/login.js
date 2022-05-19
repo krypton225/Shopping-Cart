@@ -15,6 +15,11 @@ logInSubmit.addEventListener("click", (e) => {
   let getUserName = localStorage.getItem("name_user");
   let getPassword = localStorage.getItem("pass_user");
 
+  if (getUserName === null && getPassword === null) {
+    checkerModal.textContent = "Please, Register an account first!";
+    checkerModal.classList.add("show-checker");
+  }
+
   if (logInUserName.value === "" || logInPassword.value === "") {
     checkerModal.textContent = "Please, Enter all inputs!";
     checkerModal.classList.add("show-checker");
@@ -29,7 +34,7 @@ logInSubmit.addEventListener("click", (e) => {
         window.location = "index.html";
       }, 1200);
     } else {
-      checkerModal.textContent = "Please, Enter valid username or password";
+      checkerModal.textContent = "Enter valid username or password";
     }
   }
 });

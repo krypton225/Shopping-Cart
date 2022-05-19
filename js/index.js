@@ -1,11 +1,10 @@
-let blockOfOptionsInNavBar = document.querySelector(
-  ".landing__navbar__options"
-);
-let myNameInNav = document.querySelector(
-  ".landing__navbar__list__item__link-name"
-);
-let myMainListInNavBar = document.querySelectorAll(".landing__navbar__list")[0];
-let logout = document.getElementById("logout");
+let nameInNav = document.querySelector(
+    ".landing__navbar__list__item__link-name"
+  ),
+  myMainListInNavBar = document.querySelectorAll(".landing__navbar__list")[0],
+  logout = document.getElementById("logout"),
+  signsButtons = document.getElementById("signsButtons"),
+  itemsAfterLocal = document.getElementById("itemsAfterLocal");
 
 /**
  * * Checking if the username is existed OR not.
@@ -13,7 +12,7 @@ let logout = document.getElementById("logout");
 
 const checkUserNameExist = () => {
   if (localStorage.getItem("name_user") !== null) {
-    myNameInNav.textContent = localStorage.getItem("name_user");
+    nameInNav.textContent = localStorage.getItem("name_user");
     myMainListInNavBar.classList.add("dis-none");
   } else {
     myMainListInNavBar.classList.remove("dis-none");
@@ -22,6 +21,13 @@ const checkUserNameExist = () => {
 };
 
 checkUserNameExist();
+
+toggleBars.addEventListener("click", () => {
+  if (localStorage.getItem("name_user")) {
+    signsButtons.remove();
+  }
+  myMainListInNavBar.classList.toggle("show-list");
+});
 
 /**
  * * Programming logout button

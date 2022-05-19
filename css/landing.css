@@ -156,7 +156,7 @@ body {
 
 .land__inputs__section {
   width: 26rem;
-  height: 18rem;
+  height: 19rem;
   padding: 35px 20px;
   border-radius: 4px;
   position: absolute;
@@ -242,6 +242,19 @@ body {
 .land__inputs__section__form__inputs input::placeholder {
   text-transform: capitalize;
   letter-spacing: 1px;
+}
+
+.land__inputs__form__question {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.land__inputs__form__question__p a {
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: var(--dark-blue);
 }
 
 /* * **************************************************** */
