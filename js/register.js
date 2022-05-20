@@ -1,18 +1,8 @@
 /**
- * * Get the inputs and set it into the localStorage.
+ * * This event for clicking on the form of the register page.
  */
 
-let registerEmail = document.getElementById("registerEmail"),
-  registerUserName = document.getElementById("registerUserName"),
-  registerPassword = document.getElementById("registerPassword"),
-  registerSubmit = document.getElementById("registerSubmit");
-
-let checkerModal = document.querySelector(".landing__checker");
-
-// * Close the checker modal
-checkerModal.addEventListener("click", () => {
-  checkerModal.classList.remove("show-checker");
-});
+registerEmail.focus();
 
 registerSubmit.addEventListener("click", (e) => {
   e.preventDefault();
@@ -27,7 +17,6 @@ registerSubmit.addEventListener("click", (e) => {
     registerEmail.value === "" ||
     registerUserName.value === "" ||
     registerPassword.value === "" ||
-    // * This is for the validation of the pattern of the email input
     !regexEmail.test(registerEmail.value) ||
     !usernameRegex.test(registerUserName.value)
   ) {

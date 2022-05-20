@@ -1,13 +1,8 @@
-let logInUserName = document.getElementById("logInUserName"),
-  logInPassword = document.getElementById("logInPassword"),
-  logInSubmit = document.getElementById("logInSubmit");
+/**
+ * * This event for clicking on the form of the login page.
+ */
 
-let checkerModal = document.querySelector(".landing__checker");
-
-// * Close the checker modal
-checkerModal.addEventListener("click", () => {
-  checkerModal.classList.remove("show-checker");
-});
+logInUserName.focus();
 
 logInSubmit.addEventListener("click", (e) => {
   e.preventDefault();

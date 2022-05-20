@@ -1,11 +1,7 @@
 /**
- * * This is for the nav bar when is in responsive.
+ * * This is for opening & closing the nav bar when is in responsive.
  */
 
-let toggleBars = document.querySelector(".toggle-menu");
-
-toggleBars.addEventListener("click", () => {
-  document
-    .querySelector(".landing__navbar__list")
-    .classList.toggle("show-list");
-});
+// toggleBars.addEventListener("click", () => {
+//   itemsAfterLocal.classList.toggle("show-list");
+// });
